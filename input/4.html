@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//4. Enter the float from user using Scanner class
+
+class ReadFloat{
+	public static void main(String st[]){
+		java.util.Scanner scanner = new java.util.Scanner(System.in);
+		try{
+			System.out.print("Enter the float value : ");
+			float number = scanner.nextFloat();
+			System.out.println("You entered : "+number);
+		}
+		catch(Throwable ex){
+			System.out.println("Please enter the float value : "+ex.getMessage());
+		}
+	}
+}
+<b><h3>Output:</h3></b>
+Enter the float value : 2.3
+You entered : 2.3
+</pre>
+
+
+</body>
+
+</html>

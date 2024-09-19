@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//1. Enter the character from user using InputStreamReader.
+
+    class ReadChar{
+        public static void main(String st[]){
+            java.io.InputStreamReader reader = new java.io.InputStreamReader(System.in);
+            try{
+                System.out.print("Enter a character : ");
+                int character = reader.read();
+                System.out.println("You entered : "+character);
+            }
+            catch(Throwable ex){
+                System.out.println("Wrong Input : "+ex.getMessage());
+            }
+        }
+    }
+    
+<b><h3>Output:</h3></b>
+Enter a character : w
+You entered : 119
+</pre>
+
+
+</body>
+
+</html>
