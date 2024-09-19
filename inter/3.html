@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+/*3. Write a Java program to create an interface Flyable with a method called fly_obj().
+Create threeclasses Spacecraft, Airplane, and Helicopter that implement the Flyable
+interface. Implement thefly_obj() method for each of the three classes.*/
+
+    interface Flyable{
+        void fly_obj();
+    }
+    
+    class Spacecraft implements Flyable{
+        public void fly_obj(){
+            System.out.println("Spacecraft is flying in space.");
+        }
+    }
+    
+    class Helicopter implements Flyable{
+        public void fly_obj(){
+            System.out.println("Airplane is flying in the air.");
+        }
+    }
+    
+    class Airplane implements Flyable{
+        public void fly_obj(){
+            System.out.println("Helicopter is flying and hovering.");
+        }
+    }
+    
+    class Main{
+        public static void main(String args[]){
+            Spacecraft spacecraft = new Spacecraft();
+                spacecraft.fly_obj();
+            Helicopter helicopter = new Helicopter();
+                helicopter.fly_obj();
+            Airplane airplane = new Airplane();
+                airplane.fly_obj();
+        }
+    }
+<b><h3>Output:</h3></b>
+Spacecraft is flying in space.
+Airplane is flying in the air.
+Helicopter is flying and hovering.
+</pre>
+
+
+</body>
+
+</html>

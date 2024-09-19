@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+/*6. Write a Java program to create an interface Playable with a method play()
+that takes no arguments and returns void. Create three classes Football, Volleyball,
+and Basketball that implement the Playable interface and override the play() method
+to play the respective sports.*/
+
+    interface Playable{
+        void play();
+    }
+    
+    class Football implements Playable{
+        public void play(){
+            System.out.println("Football is a famous sport.");
+        }
+    }
+    class Volleyball implements Playable{
+        public void play(){
+            System.out.println("Volleyball is played in teams. ");
+        }
+    }
+    class Basketball implements Playable{
+        public void play(){
+            System.out.println("Basketball is played in teams. ");
+        }
+    }
+    class Main{
+        public static void main(String st[]){
+            Football football = new Football();
+            football.play();
+            Volleyball volleyball = new Volleyball();
+            volleyball.play();
+            Basketball basketball = new Basketball();
+            basketball.play();
+        }
+    }
+<b><h3>Output:</h3></b>
+Football is a famous sport.
+Volleyball is played in teams.
+Basketball is played in teams.
+</pre>
+
+
+</body>
+
+</html>

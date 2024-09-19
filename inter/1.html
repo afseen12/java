@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+/*1. Write a Java program to create an interface Shape with the getArea() method.
+Create three classes Rectangle, Circle, and Triangle that implement the Shape
+interface. Implement the getArea() method for each of the three classes.*/
+
+    interface Shape{
+    double getArea();
+    }
+
+    class Rectangle implements Shape{
+    private double length, width;
+    Rectangle(double l, double w){
+    length = l;
+    width = w;
+    System.out.println("length of rectangle = "+length);
+    System.out.println("Width of rectangle = "+width);
+    }
+    public double getArea(){
+    return length*width;
+    }
+    }
+
+    class Circle implements Shape{
+    private double radius;
+    Circle(double r){
+    radius = r;
+    System.out.println("Radius of Circle = "+radius);
+
+    }
+    public double getArea(){
+    return 3.14*radius*radius;
+    }
+    }
+
+    class Triangle implements Shape{
+    private double height, base;
+    Triangle(double h, double b){
+    height = h;
+    base = b;
+    System.out.println("Height of Triangle = "+height);
+    System.out.println("Base of Triangle = "+base);
+    }
+    public double getArea(){
+    return (height*base)/2;
+    }
+    }
+
+    class Main{
+    public static void main(String args[]){
+    Rectangle rectangle = new Rectangle(10, 20);
+    System.out.println("The area of Rectangle = "+rectangle.getArea()+"\n");
+    Circle circle = new Circle(3);
+    System.out.println("The area of Circle = "+circle.getArea()+"\n");
+    Triangle triangle = new Triangle(3.3, 4);
+    System.out.println("The area of Triangle = "+triangle.getArea()+"\n");
+    }
+    }
+<b><h3>Output:</h3></b>
+length of rectangle = 10.0
+Width of rectangle = 20.0
+The area of Rectangle = 200.0
+
+Radius of Circle = 3.0
+The area of Circle = 28.259999999999998
+
+Height of Triangle = 3.3
+Base of Triangle = 4.0
+The area of Triangle = 6.6
+</pre>
+
+
+</body>
+
+</html>
