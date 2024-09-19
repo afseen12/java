@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//Java program to find surface area of cylinder
+
+    class SurfaceAreaOfCylinder{
+        double height;
+        double radius;
+        SurfaceAreaOfCylinder(double h, double r){
+            height = h;
+            radius = r;
+        }
+        double surfaceAreaOfCylinder(){
+            return (2)*(3.14)*(radius)*(height + radius);
+        }
+    }
+    
+    class Main{
+        public static void main(String st[]){
+        SurfaceAreaOfCylinder cylinder = new SurfaceAreaOfCylinder(3,4);
+        System.out.println("Surface area of cylinder : "+cylinder.surfaceAreaOfCylinder());
+        }
+    }
+<b><h3>Output:</h3></b>
+Surface area of cylinder : 175.84
+</pre>
+
+
+</body>
+
+</html>

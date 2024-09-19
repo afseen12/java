@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+// Write a Java Program to accept number of week’s day (1-7) and print name
+of the day
+    
+class WeekDay {
+        public static void main(String st[]) {
+            java.util.Scanner scanner = new java.util.Scanner(System.in);
+            System.out.print("Enter day number : ");
+            int day = scanner.nextInt();
+            String dName = dayName(day);
+            if (dName != null) {
+                System.out.println("Day Name : " + dName);
+            } else {
+                System.out.println("Invalid day..");
+            }
+        }
+    
+        static String dayName(int day) {
+            switch (day) {
+                case 1:
+                    return "Monday";
+                case 2:
+                    return "Tuesday";
+                case 3:
+                    return "Wednesday";
+                case 4:
+                    return "Thurday";
+                case 5:
+                    return "Friday";
+                case 6:
+                    return "Saturday";
+                case 7:
+                    return "Sunday";
+                default:
+                    return null;
+            }
+        }
+    }
+<b><h3>Output:</h3></b>
+Enter day number : 4
+Day Name : Thurday
+</pre>
+
+
+</body>
+
+</html>

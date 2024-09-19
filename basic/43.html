@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//Java program to sum of N numbers
+    class SumOfNNumbers {
+        public static void main(String[] args) {
+            java.util.Scanner scanner = new java.util.Scanner(System.in);
+    
+            System.out.print("Enter the value of n:");
+            int n = scanner.nextInt();
+            int sum = 0;
+            int i = 0;
+    
+            System.out.println("Enter " + n + " numbers:");
+            while (i &lt; n) {
+                sum += scanner.nextInt();
+                i++;
+            }
+    
+            System.out.println("Sum: " + sum);
+        }
+    }
+<b><h3>Output:</h3></b>
+Enter the value of n:3
+Enter 3 numbers:
+1
+2
+3
+Sum: 6
+</pre>
+
+
+</body>
+
+</html>

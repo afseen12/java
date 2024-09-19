@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//Java Program to find area of parallelogram
+
+    class AreaOfParallelogram{
+        double base; 
+        double height;
+        AreaOfParallelogram(double b, double h){
+            base = b;
+            height = h;
+        }
+        double areaOfParallelogram(){
+            return base*height;
+        }
+    }
+    
+    class Main{
+        public static void main(String st[]){
+        AreaOfParallelogram parallelogram = new AreaOfParallelogram(3,6);
+        System.out.println("Area of parallelogram : "+parallelogram.areaOfParallelogram());
+        }
+    }
+
+<b><h3>Output:</h3></b>
+Area of parallelogram : 18.0
+</pre>
+
+
+</body>
+
+</html>

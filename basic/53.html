@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//Write a Java program to find the number of days in a month
+
+    class Main {
+        public static void main(String st[]) {
+            java.util.Scanner scanner = new java.util.Scanner(System.in);
+            System.out.print("Enter Month : ");
+            int month = scanner.nextInt();
+            System.out.print("Enter Year : ");
+            int year = scanner.nextInt();
+            java.time.LocalDate date = java.time.LocalDate.of(year, month, 1);
+            int days = date.lengthOfMonth();
+            System.out.println("Number of days : " + days);
+        }
+    }
+<b><h3>Output:</h3></b>
+Enter Month : 3
+Enter Year : 2024
+Number of days : 31
+</pre>
+
+
+</body>
+
+</html>

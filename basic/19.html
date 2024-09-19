@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//Write a Java program to convert seconds to hour, minute and seconds
+    class Main{
+        public static void main(String st[]){
+            java.util.Scanner scanner = new java.util.Scanner(System.in);
+            System.out.print("Enter Seconds : ");
+            int seconds = scanner.nextInt();
+            
+            int hours = seconds / 3600;
+            int minutes = (seconds % 3600)/60;
+            int sec = seconds % 60;
+    
+            System.out.println(seconds + " seconds is equal to");
+            System.out.println(hours + " hours");
+            System.out.println(minutes + " minutes");
+            System.out.println(sec +" sec");
+        }
+    }
+<b><h3>Output:</h3></b>
+Enter Seconds : 7894
+7894 seconds is equal to
+2 hours
+11 minutes
+34 sec
+</pre>
+
+
+</body>
+
+</html>

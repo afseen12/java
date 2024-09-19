@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//Java program to find area of circle
+    class AreaOfCircle{
+        double radius;
+        double area;
+        AreaOfCircle(int r){
+            radius = r;
+        }
+        double areaOfCircle(){
+            return 3.14*radius*radius;
+        }
+    }
+    
+    class Main{
+        public static void main(String st[]){
+            AreaOfCircle circle = new AreaOfCircle(5);
+            System.out.println("Area of Circle : "+circle.areaOfCircle());
+        }
+    }
+<b><h3>Output:</h3></b>
+Area of Circle : 78.5
+</pre>
+
+
+</body>
+
+</html>

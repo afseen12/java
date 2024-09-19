@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//Java program to find surface area of cuboid
+
+    class SurfaceAreaOfCuboid{
+        double height;
+        double width; 
+        double length;
+        SurfaceAreaOfCuboid(double l, double w,double h){
+            length = l;
+            width = w;
+            height = h;
+        }
+        double surfaceAreaOfCuboid(){
+            return 2*(length*width+length*height+width*height);
+        }
+    }
+    
+    class Main{
+        public static void main(String st[]){
+        SurfaceAreaOfCuboid cuboid = new SurfaceAreaOfCuboid(3,4,3);
+        System.out.println("Surface area of cuboid : "+cuboid.surfaceAreaOfCuboid());
+        }
+    }
+<b><h3>Output:</h3></b>
+Surface area of cuboid : 66.0
+</pre>
+
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//Java Program to find area of rectangle
+
+    class AreaOfRectangle{
+        double length; 
+        double width;
+        AreaOfRectangle(double l, double w){
+            length = l;
+            width = w;
+        }
+        double areaOfRectangle(){
+            return length*width;
+        }
+    }
+    
+    class Main{
+        public static void main(String st[]){
+        AreaOfRectangle rectangle = new AreaOfRectangle(3,6);
+        System.out.println("Area of rectangle : "+rectangle.areaOfRectangle());
+        }
+    }
+<b><h3>Output:</h3></b>
+Area of rectangle : 18.0
+</pre>
+
+
+</body>
+
+</html>
