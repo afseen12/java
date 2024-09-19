@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+/* 26. Write a Java program to create an abstract class GeometricShape with 
+abstract methods area() and perimeter(). Create subclasses Triangle and Square
+that extend the GeometricShape class and implement the respective methods to 
+calculate the area and perimeter of each shape.*/
+
+    abstract class GeometricShape{
+        abstract double area();
+        abstract double perimeter();
+    }
+    
+    class Triangle extends GeometricShape{
+    private double Side1, Side2, Base, Height;
+        Triangle(double B, double H, double S1, double S2){
+            Base = B;
+            Height = H;
+            Side1 = S1;
+            Side2 = S2;
+        }
+        double area(){
+            return (Height*Base)/2 ;
+        }
+        double perimeter(){
+            return Side1 + Side2 + Base;
+        }
+    }
+    
+    class Square extends GeometricShape{
+    private double Side;
+        Square(double S){
+            Side = S;
+        }
+        double area(){
+            return Side*Side;
+        }
+        double perimeter(){
+            return 4*Side;
+        }
+    }
+    
+    class Main{
+        public static void main(String args[]){
+            Triangle triangle = new Triangle(3, 4.5 , 5, 5);
+                System.out.println("The area of Triangle is = "+triangle.area());
+                System.out.println("The perimeter of Triangle is = "+triangle.perimeter());
+            Square square = new Square(3);
+                System.out.println("The area of Square is = "+square.area());
+                System.out.println("The perimeter of Square is = "+square.perimeter());
+        }
+    }
+
+<b><h3>Output:</h3></b>
+The area of Triangle is = 6.75
+The perimeter of Triangle is = 13.0
+The area of Square is = 9.0
+The perimeter of Square is = 12.0
+</pre>
+
+
+</body>
+
+</html>

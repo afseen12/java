@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+    /*7. Write a Java program to create a class known as Person with methods 
+    called getFirstName() and getLastName(). Create a subclass called
+    Employee that adds a new method named getEmployeeId() and overrides 
+    the getLastName() method to include the employee's job title.*/
+
+    class Person{
+    String fname, lname;
+        Person(String F, String L){
+            fname = F;
+            lname = L;
+        }
+        String getFirstName(){
+            return fname;
+        }
+        String getLastName(){
+            return lname;
+        }
+    
+    }
+    
+    class Employee extends Person{
+    String Empid, Jtitle;
+        Employee(String F, String L, String E, String J){
+            super(F, L);
+            Empid = E;
+            Jtitle = J;
+        }
+        String getEmployeeID(){
+            return Empid;
+        }
+        String getLastName(){
+            return super.getLastName() + " , "+ Jtitle;
+        }
+    }
+    
+class Main{
+    public static void main(String args[]){
+    Employee obj = new Employee("Misbah", "Ansari", "E123", "Engineer");	
+    System.out.println("The First Name is "+obj.getFirstName());
+    System.out.println("The Last Name and Employee's Job Title is "+obj.getLastName()+"respectively.");
+    System.out.println("The Employee ID is "+obj.getEmployeeID());
+        
+        }
+    }
+<b><h3>Output:</h3></b>
+The First Name is Misbah
+The Last Name and Employee's Job Title is Ansari , Engineer respectively.
+The Employee ID is E123
+</pre>
+
+
+</body>
+
+</html>

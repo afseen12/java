@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+/*20. Write a Java program to create an abstract class Shape3D with abstract
+methods calculateVolume() and calculateSurfaceArea(). Create subclasses
+Sphere and Cube that extend the Shape3D class and implement the respective
+methods to calculate the volume and surface area of each shape.*/
+
+    abstract class Shape3D{
+        abstract double calculateVolume();
+        //abstract double calculateSurfaceArea();
+    }
+    
+    class Sphere extends Shape3D{
+    private double Radius;
+        Sphere(double r){
+            Radius = r;
+        }
+        double calculateVolume(){
+            return (4/3.0)*3.14*Radius*Radius*Radius;
+        }
+        double calculateSurfaceArea(){
+            return 4*3.14*(Radius*Radius);
+        }
+    }
+    
+    class Cube extends Shape3D{
+    private double Side;
+        Cube(double S){
+            Side = S;
+        }
+        double calculateVolume(){
+            return Side*Side*Side;
+        }
+        double calculateSurfaceArea(){
+            return 6*(Side*Side);
+        }
+    
+    }
+    
+class Main{
+public static void main(String args[]){
+    Sphere sphere = new Sphere(3);
+        System.out.println("The Volume of Sphere = "+sphere.calculateVolume());
+        System.out.println("The Surface Area of Sphere = "+sphere.calculateSurfaceArea());
+    Cube cube = new Cube(4);
+        System.out.println("The Volume of Cube = "+cube.calculateVolume());
+        System.out.println("The Surface Area of Cube = "+cube.calculateSurfaceArea());	
+        }
+}
+<b><h3>Output:</h3></b>
+The Volume of Sphere = 113.03999999999998
+The Surface Area of Sphere = 113.04
+The Volume of Cube = 64.0
+The Surface Area of Cube = 96.0
+</pre>
+
+
+</body>
+
+</html>

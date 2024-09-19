@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+    /*6. Write a Java program to create a class called Animal with a method
+    named move(). Create a subclass called Cheetah that overrides the move()
+    method to run.*/
+
+    class Animal{
+        void move(){
+            System.out.println("Animals Run fast");
+        }
+    }
+    
+    class Cheetah extends Animal{
+        void move(){
+            System.out.println("Run");
+        }
+    }
+    
+    class Main{
+        public static void main(String args[]){
+            Cheetah obj = new Cheetah();
+            obj.move();
+        }
+    }
+<b><h3>Output:</h3></b>
+Run
+</pre>
+
+
+</body>
+
+</html>

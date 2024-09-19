@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+/*23. Write a Java program to create an abstract class Instrument with abstract
+methods play() and tune(). Create subclasses for Glockenspiel and Violin that
+extend the Instrument class and implement the respective methods to play and
+tune each instrument.*/
+
+    abstract class Instrument{
+        abstract void play();
+        abstract void tune();
+    }
+    
+    class Glockenspiel extends Instrument{
+        void play(){
+            System.out.println("Playing the Glockenspiel.");
+        }
+        void tune(){
+            System.out.println("Glockenspiel is tuned by adjusting the lenght of steel bars.\n");
+        }
+    }
+    
+    class Violin extends Instrument{
+        void play(){
+            System.out.println("Playing the Violin.");
+        }
+        void tune(){
+            System.out.println("It's difficult to tune Violin.");
+        }
+    }
+    
+    class Main{
+        public static void main(String args[]){
+            Glockenspiel glock = new Glockenspiel();
+                glock.play();	
+                glock.tune();
+            Violin violin = new Violin();
+                violin.play();	
+                violin.tune();	
+        }
+    }
+
+
+<b><h3>Output:</h3></b>
+Playing the Glockenspiel.
+Glockenspiel is tuned by adjusting the lenght of steel bars.
+
+Playing the Violin.
+It's difficult to tune Violin.
+</pre>
+
+
+</body>
+
+</html>

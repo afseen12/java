@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+/*11. Create a program, showing an example of super keyword.*/
+
+    class Animal{
+        void Cat(){
+            System.out.println("Cat is eating");
+        }
+    }
+    
+    class Dog extends Cat {
+        void Cat(){
+            System.out.println("Cat is Domestic Animal");
+        }
+        void eat(){
+            super.Cat();
+        }
+    }
+    
+    class Main{
+        public static void main(String args[]){
+            Dog obj = new Dog();
+            obj.eat();
+            obj. Cat();
+        }
+    }
+
+
+<b><h3>Output:</h3></b>
+Cat is eating
+Cat is Domestic Animal
+</pre>
+
+
+</body>
+
+</html>

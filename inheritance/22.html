@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+    /*22. Write a Java program to create an abstract class Person with 
+    abstract methods eat() and exercise(). Create subclasses Athlete and
+    LazyPerson that extend the Person class and implement the respective
+    methods to describe how each person eats and exercises.*/
+
+    abstract class Person{
+        abstract void eat();
+        abstract void exercise();
+    }
+    
+    class Athlete extends Person{
+        void eat(){
+        System.out.println("Athelet person eat foods rich in carbohydrates.");
+        }	
+        void exercise(){
+        System.out.println("Atlhete person exercise regularly.\n");
+        }
+    }
+    
+    class LazyPerson extends Person{
+        void eat(){
+            System.out.println("Lazy person eats fast foods.");
+        }	
+        void exercise(){
+            System.out.println("Lazy person don't exercise.");
+        }
+    }
+    
+    class Main{
+        public static void main(String args[]){
+            Athlete athlete = new Athlete();
+                athlete.eat();
+                athlete.exercise();
+            LazyPerson lazy = new LazyPerson();
+                lazy.eat();
+                lazy.exercise();
+        }
+    }
+<b><h3>Output:</h3></b>
+Athelet person eat foods rich in carbohydrates.
+Atlhete person exercise regularly.
+
+Lazy person eats fast foods.
+Lazy person don't exercise.
+</pre>
+
+
+</body>
+
+</html>

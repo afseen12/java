@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+/*21. Write a Java program to create an abstract class Vehicle with abstract
+methods startEngine() and stopEngine(). Create subclasses Car and Motorcycle
+that extend the Vehicle class and implement the respective methods to start
+and stop the engines for each vehicle type.*/
+
+    abstract class Vehicle{
+        abstract void startEngine();
+        abstract void stopEngine();
+    }
+    
+    class Car extends Vehicle{
+        void startEngine(){
+            System.out.println("Car engine started..");
+        }
+        void stopEngine(){
+            System.out.println("Car engine stopped..\n");
+        }
+    }
+    
+    class Motorcycle extends Vehicle{
+        void startEngine(){
+            System.out.println("Motorcycle engine started..");
+        }
+        void stopEngine(){
+            System.out.println("Motorcycle engine stopped..");
+        }
+    }
+    
+    class Main{
+    public static void main(String args[]){
+        Car car = new Car();
+            car.startEngine();
+            car.stopEngine();
+        Motorcycle cycle = new Motorcycle();
+            cycle.startEngine();
+            cycle.stopEngine();
+        }
+    }
+<b><h3>Output:</h3></b>
+Car engine started..
+Car engine stopped..
+
+Motorcycle engine started..
+Motorcycle engine stopped..
+</pre>
+
+
+</body>
+
+</html>

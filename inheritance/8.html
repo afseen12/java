@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+/*8. Write a Java program to create a class called Shape with methods 
+called getPerimeter() and getArea(). Create a subclass called Circle 
+that overrides the getPerimeter() and getArea() methods to calculate 
+the area and perimeter of a circle.*/
+
+    class Shape{
+        double getPerimeter(){
+            System.out.println("Perimeter of Circle is 2*3.14*r");
+            return 0;
+        }
+        double getArea(){
+            System.out.println("Area of Circle is 3.14*r*r");
+            return 0;
+        }
+    
+    }
+    
+    class Circle extends Shape{
+    double Radius;
+        Circle(double r){
+            Radius = r;
+        }
+        double getPerimeter(){
+            return 2 * 3.14 * Radius;
+        }
+        double getArea(){
+            return 3.14 * (Radius*Radius);
+        }
+    }
+    
+    class Main{
+        public static void main(String args[]){
+        Circle obj = new Circle(10);
+        System.out.println("The Perimeter of circle is "+obj.getPerimeter());
+        System.out.println("The Area of circle is "+obj.getArea());
+        }
+    }
+<b><h3>Output:</h3></b>
+The Perimeter of circle is 62.800000000000004
+The Area of circle is 314.0
+</pre>
+
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+/* 24. Write a Java program to create an abstract class Shape2D with abstract
+methods draw() and resize(). Create subclasses Rectangle and Circle that
+extend the Shape2D class and implement the respective methods to draw and
+resize each shape. */
+
+    abstract class Shape2D{
+        abstract void draw();
+        abstract void resize();
+    }
+    
+    class Rectangle extends Shape2D{
+    private double length, width;
+        Rectangle(double l, double w){
+            length = l;
+            width = w;
+        }
+        void draw(){
+            System.out.println("Drawing Rectangle having length "+length+" and width "+width);
+        }
+        void resize(){
+            length = 30;
+            width = 40;
+            System.out.println("Resizing the Lenght to "+length+" and width to "+width +"\n");
+        }	
+    }
+    class Circle extends Shape2D{
+    private double radius;
+        Circle(double r){
+            radius = r;
+        }
+        void draw(){
+            System.out.println("Drawing a circle of radius "+radius);
+        }
+        void resize(){
+            radius = 4.4;
+            System.out.println("Resizing the Radius to "+radius);
+        }	
+    }
+    
+    class Main{
+        public static void main(String args[]){
+            Rectangle rect = new Rectangle(12,14);
+                 rect.draw();
+                rect.resize();
+            Circle circle = new Circle(5);
+                circle.draw();
+                circle.resize();
+        }
+    }
+<b><h3>Output:</h3></b>
+Drawing Rectangle having length 12.0 and width 14.0
+Resizing the Lenght to 30.0 and width to 40.0
+
+Drawing a circle of radius 5.0
+Resizing the Radius to 4.4
+</pre>
+
+
+</body>
+
+</html>

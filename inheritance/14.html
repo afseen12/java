@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+/*14. Create a program, showing an example of dynamic method dispatch.*/
+
+    class Parent{
+        void Account(){
+            System.out.println("Accounts should be handled manually");
+        }
+        void Worship(){
+            System.out.println("Worship must be done early morning");
+        }
+    }
+    
+    class Child extends Parent{
+        void Account(){
+            System.out.println("Accounts should be handled through softwares");
+        }
+        void Store(){
+            System.out.println("Grocery Store");
+        }
+    }
+    
+    class Main{
+        public static void main(String args[]){
+            Parent obj = new Child();
+            obj.Account();
+            obj.Worship();
+            //obj.Store(); we can't call obj.store
+        }
+    }
+<b><h3>Output:</h3></b>
+Accounts should be handled through softwares
+Worship must be done early morning
+</pre>
+
+
+</body>
+
+</html>
