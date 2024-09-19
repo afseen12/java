@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+// 1. Write a Java program that throws an exception and catch it using a try-catch block.
+
+class Exception1{
+	int display() throws java.io.IOException
+	{
+		
+		return System.in.read();	
+	}
+
+public static void main(String st[]){
+	Exception1 ex = new Exception1();
+	try{
+		System.out.println((char)ex.display());
+		
+	}
+	catch(Throwable th){
+		System.out.println("Exception ");
+	}
+	}
+}
+<b><h3>Output:</h3></b>
+w
+w
+</pre>
+
+
+</body>
+
+</html>

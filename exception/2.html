@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//2. Write a Java program to create a method that takes an integer as a parameter
+and throws an exception if the number is odd.
+
+class OddNumberException extends Throwable{
+	public String getMessage(){
+		return "Number is odd..";
+	}
+}
+
+class Main{
+	static void checkDigit(int x) throws OddNumberException {
+		
+		if(x % 2 != 0){
+			throw new OddNumberException();
+		}			
+	}
+public static void main(String st[]){
+	
+	try{
+	checkDigit(9);
+	}
+	catch(OddNumberException ex){
+		System.out.println(ex.getMessage());
+	}
+}
+}
+<b><h3>Output:</h3></b>
+Number is odd..
+</pre>
+
+
+</body>
+
+</html>

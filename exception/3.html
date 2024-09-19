@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//3. Write a java program to create  method that reads a file and throws an exception if the file is not found.
+
+class ReadFile{
+	public static void main(String st[]) 
+	{
+		try{
+			readFile("file.txt");
+		}
+		catch(Throwable ex){
+			System.out.println("File not found: "+ex.getMessage());
+		}
+	}
+	static void readFile(String fileName) throws java.io.FileNotFoundException
+	{
+		java.io.File file = new java.io.File(fileName);
+		java.util.Scanner scanner = new java.util.Scanner(file);
+		while(scanner.hasNextLine()){
+			System.out.println(scanner.nextLine());
+		}
+	}
+}
+<b><h3>Output:</h3></b>
+File not found: file.txt (The system cannot find the file specified)
+</pre>
+
+
+</body>
+
+</html>
