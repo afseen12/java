@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//10. Program to find the transpose of a given matrix
+
+class Transpose{
+        public static void main(String st[]){
+            int array[][] = {{2,3,4},{9,7,6},{5,7,3}};
+            int transpose[][] = new int[array[0].length][array.length];
+            for(int i = 0; i&lt;3; i++){
+                for(int j = 0; j&lt;3; j++){
+                    transpose[j][i] = array[i][j];
+                }
+            }
+            System.out.println("Original Matrix:");
+            printArray(array);
+            System.out.println("Transpose Matrix:");
+            printArray(transpose);
+    
+        }
+        static void printArray(int array[][]){
+            for(int i=0; i&lt;3; i++){
+                for(int j=0; j&lt;3; j++){
+                    System.out.print(array[i][j] + " ");
+                }
+                System.out.println();
+            }
+        }
+    }
+<b><h3>Output:</h3></b>
+Original Matrix:
+2 3 4
+9 7 6
+5 7 3
+Transpose Matrix:
+2 9 5
+3 7 7
+4 6 3
+</pre>
+
+
+</body>
+
+</html>

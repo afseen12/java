@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//8. Program to find the frequency of odd & even numbers in the given matrix
+
+class EvenOddFrequency{
+        public static void main(String st[]){
+            int array[][] = {{1,2,3},{4,8,9},{6,5,5}};
+            int odd = 0, even = 0;
+    
+            for(int i = 0; i&lt;3; i++){
+                for(int j = 0; j&lt;3 ; j++){
+                    if(array[i][j] % 2 == 0){
+                        even++;
+                    }
+                    else{
+                        odd++;
+                    }
+                }
+            }
+            System.out.println("Frequency of Odd Number in Matirx : "+odd);
+            System.out.println("Frequency of Even Number in Matirx : "+even);
+    
+        }
+    
+    }
+<b><h3>Output:</h3></b>
+Frequency of Odd Number in Matirx : 5
+Frequency of Even Number in Matirx : 4
+</pre>
+
+
+</body>
+
+</html>

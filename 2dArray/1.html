@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//1. Enter the Matrix of rows and columns entered by the user and print in matrix format.
+    class TwoDArray {
+        public static void main(String st[]) throws java.io.IOException {
+                java.io.InputStreamReader isr = new java.io.InputStreamReader(System.in);
+                java.io.BufferedReader insert = new java.io.BufferedReader(isr);
+                int arr[][] = new int[2][3];
+                for (int i = 0; i &lt; arr.length; i++) {
+                    for (int j = 0; j &lt; arr[i].length; j++) {
+                        arr[i][j] = Integer.parseInt(insert.readLine());
+                    }
+                }
+                for (int i = 0; i &lt; arr.length; i++) {
+                    for (int j = 0; j &lt; arr[i].length; j++) {
+                        System.out.print(arr[i][j]+" ");
+        
+                    }
+                    System.out.println();
+                }
+            }
+        }
+<b><h3>Output:</h3></b>
+3
+4
+5
+6
+7
+5
+3 4 5
+6 7 5
+</pre>
+
+
+</body>
+
+</html>

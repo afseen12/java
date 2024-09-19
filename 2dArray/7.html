@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+// 7. Program to display the upper triangular matrix
+    class UpperTriangle {
+        public static void main(String st[]) {
+            int array[][] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+            System.out.println("Matrix Matrix");
+            matrix(array);
+            System.out.println("Upper Triangle of Matrix");
+            upperTriangle(array);
+        }
+    
+        static void matrix(int array[][]) {
+            for (int i = 0; i &lt; 3; i++) {
+                for (int j = 0; j &lt; 3; j++) {
+                    System.out.print(array[i][j] + " ");
+                }
+                System.out.println();
+            }
+        }
+    
+        static void upperTriangle(int array[][]) {
+            for (int i = 0; i &lt; array.length; i++) {
+                for (int j = array.length-i-1; j &lt; array[0].length; j++) {
+                    System.out.print(array[i][j]+" ");
+                }
+                System.out.println();
+            }
+        }
+    }
+    
+<b><h3>Output:</h3></b>
+Matrix Matrix
+1 2 3
+4 5 6
+7 8 9
+Upper Triangle of Matrix
+3
+5 6
+7 8 9
+</pre>
+
+
+</body>
+
+</html>

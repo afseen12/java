@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//9. Program to find the sum of each row and each column of a matrix
+
+    class Sum{
+        public static void main(String st[]){
+            int array[][] = {{2,3,4},{5,8,7},{3,4,9}};
+            int rowSum = 0, colSum = 0;
+            for(int i = 0; i&lt;3; i++){
+                for(int j = 0; j &lt;3 ; j++){
+                    rowSum += array[i][j];
+                }
+                System.out.println("Sum of row" + (i+1) +":"+ rowSum);
+            }
+    
+            for(int j = 0; j&lt;3; j++){
+                for(int i = 0; i&lt;3; i++){
+                    colSum += array[i][j];
+                }
+                System.out.println("Sum of column"+ (j+1)+":"+colSum);
+            }
+        }
+    }
+<b><h3>Output:</h3></b>
+Sum of row1:9
+Sum of row2:29
+Sum of row3:45
+Sum of column1:10
+Sum of column2:25
+Sum of column3:45
+</pre>
+
+
+</body>
+
+</html>
