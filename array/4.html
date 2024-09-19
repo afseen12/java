@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+// Program to print the duplicate elements of an array
+class Main {
+    public static void main(String st[]) {
+        int[] array = {1, 2, 3, 3, 4, 4};
+        printDuplicates(array);
+    }
+
+    public static void printDuplicates(int[] array) {
+        for (int i = 0; i &lt; array.length; i++) {
+            for (int j = i + 1; j &lt; array.length; j++) {
+                if (array[i] == array[j]) {
+                    System.out.println(array[i] + " is a duplicate value ");
+                    break;
+                }
+            }
+        }
+    }
+}
+<b><h3>Output:</h3></b>
+3 is a duplicate value
+4 is a duplicate value
+</pre>
+
+
+</body>
+
+</html>

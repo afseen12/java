@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+// Program to print the smallest element in an array
+
+class Main {
+    public static void main(String[] args) {
+        int[] array = {10, 20, 30, 40, 50};
+        smallestElement(array);
+    }
+
+    public static void smallestElement(int[] array) {
+        int min = array[0];
+        for (int i = 1; i &lt; array.length; i++) {
+            if (array[i] &lt; min) {
+                min = array[i];
+            }
+        }
+        System.out.println("smallest element: " + min);
+    }
+}
+<b><h3>Output:</h3></b>
+smallest element: 10
+</pre>
+
+
+</body>
+
+</html>

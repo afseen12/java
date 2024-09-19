@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+// Program to Find Largest Number in an array
+class Main {
+    public static void main(String[] args) {
+        int[] array = {10, 20, 30, 40, 50};
+        int largest = findLargest(array);
+        System.out.println("Largest element: " + largest);
+    }
+
+    public static int findLargest(int[] array) {
+        int largest = array[0];
+        for (int i = 1; i &lt; array.length; i++) {
+            if (array[i] > largest) {
+                largest = array[i];
+            }
+        }
+        return largest;
+    }
+}
+
+<b><h3>Output:</h3></b>
+Largest element: 50
+</pre>
+
+
+</body>
+
+</html>

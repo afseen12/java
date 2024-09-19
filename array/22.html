@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+// Program to Print Odd and Even Numbers from an array
+class Main {
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        oddAndEvenNumbers(array);
+    }
+
+    public static void oddAndEvenNumbers(int[] array) {
+        System.out.println("Odd numbers: ");
+        for (int i = 0; i &lt; array.length; i++) {
+            if (array[i] % 2 != 0) {
+                System.out.print(array[i] + " ");
+            }
+        }
+        System.out.println();
+        System.out.println("Even numbers: ");
+        for (int i = 0; i &lt; array.length; i++) {
+            if (array[i] % 2 == 0) {
+                System.out.print(array[i] + " ");
+            }
+        }
+    }
+}
+<b><h3>Output:</h3></b>
+Odd numbers:
+1 3 5 7 9
+Even numbers:
+2 4 6 8 10
+</pre>
+
+
+</body>
+
+</html>

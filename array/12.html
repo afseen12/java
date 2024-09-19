@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+// Program to print the sum of all the items of the array
+
+    class Main {
+        public static void main(String[] args) {
+            int[] array = {10, 20, 30, 40, 50};
+            sumOfElements(array);
+        }
+    
+        public static void sumOfElements(int[] array) {
+            int sum = 0;
+            for (int i = 0; i &lt; array.length; i++) {
+                sum += array[i];
+            }
+            System.out.println("Sum of elements: " + sum);
+        }
+    }
+<b><h3>Output:</h3></b>
+Sum of elements: 150
+</pre>
+
+
+</body>
+
+</html>
