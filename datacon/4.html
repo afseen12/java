@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//4. How to convert long to String
+
+    class LongToString{
+        public static void main(String st[]){
+            long num = 7867676;
+            try{
+                String str = Long.toString(num);
+                System.out.println("Converted String : "+num);
+            }
+            catch(NumberFormatException ex){
+                System.out.println(ex.getMessage());
+            }
+        }
+    }
+<b><h3>Output:</h3></b>
+Converted String : 7867676
+</pre>
+
+
+</body>
+
+</html>

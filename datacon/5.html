@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 1.2rem;
+
+        }
+
+        table {
+            width: 80%;
+            margin-left: 100px;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+//5. How to convert String to float
+
+    class StringToFloat{
+        public static void main(String sy[]){
+            String str = "1.23";
+            try{
+                float f = Float.parseFloat(str);
+                System.out.println("Converted float : "+f);
+            }
+            catch(NumberFormatException ex){
+                System.out.println(ex.getMessage());
+            }
+        }
+    }
+<b><h3>Output:</h3></b>
+Converted float : 1.23
+</pre>
+
+
+</body>
+
+</html>
